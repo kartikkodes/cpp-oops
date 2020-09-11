@@ -1,0 +1,25 @@
+#include<iostream>
+class addition
+{
+	int a,b;
+	int sum=0;
+	public:
+		void numbers();
+		void add();
+};
+void addition::numbers()
+{
+	std::cout<<"Enter two numbers\n";
+	std::cin>>a>>b;
+}
+void addition::add()
+{
+	std::cout<<a+b;
+}
+int main()
+{
+	addition a;
+	a.numbers();
+	a.add();
+	return 0;
+}
