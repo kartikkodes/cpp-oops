@@ -1,0 +1,32 @@
+#include<iostream>
+#include<conio.h>
+
+class date
+{
+	int day;
+	int month;
+	int year;
+	public:
+	void setdate(int,int,int);
+	void showdate();	
+};
+void date::setdate(int a,int b,int c)
+{
+	day=a;
+	month=b;
+	year=c;
+}
+void date::showdate()
+{
+	std::cout<<day<<"/"<<month<<"/"<<year<<"\n";
+}
+int main()
+{
+	date T,B;
+	T.setdate(13,9,2020);
+	B.setdate(15,11,2000);
+	T.showdate();
+	B.showdate();
+	getch();
+	return 0;
+}
