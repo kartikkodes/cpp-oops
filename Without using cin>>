@@ -1,0 +1,40 @@
+#include<iostream>
+#include<string.h>
+#include<conio.h>
+class emp
+{
+	int age;
+	char name[10];
+	float sal;
+	public:
+		void set(int,char *,float);
+		void show();
+};
+
+                  //Member function definitions
+           
+	void emp::set(int a,char* p,float s)
+	{
+		age=a;
+		strcpy(name,p);
+		sal=s;
+	}
+	
+	void emp::show()
+	{
+		std::cout<<age<<" "<<name<<"  "<<sal<<"\n";
+	}
+	 
+	          //Main body
+	          
+	int main()
+	{
+		emp E,F;
+		E.set(25,"Rahul",30000.0);
+		F.set(29,"Ajay",28000.0);
+		E.show();
+		F.show();
+		getch();
+		return 0;
+	}
+	   
