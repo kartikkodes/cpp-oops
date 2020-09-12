@@ -2,7 +2,6 @@
 class addition
 {
 	int a,b;
-	int sum=0;
 	public:
 		void numbers();
 		void add();
