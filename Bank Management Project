@@ -1,0 +1,13 @@
+#include<iostream>
+#include<string.h>
+#include<conio.h>
+class bank
+{
+	private:
+		int acc_nmbr;                //Account number  
+		char fullname[20];          //Name of account holder 
+		char brnch[20];            //Branch name (AJM-PNCH) 
+		char type[8];             //Type of account (savings or current)
+		
+		
+}
