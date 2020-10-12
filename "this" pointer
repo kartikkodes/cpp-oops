@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+
+class box{
+    int l;
+    int b;
+    int h;
+ public:
+    box(int,int,int);
+    box(box &);
+    void show();   
+};
+
+box::box(int l,int b,int h)
+{
+    this->l=l;                                      //"this" is pointer which points calling object 
+    this->b=b;
+    this->h=h;
+}
+
+box:: box(box & P)
+{
+    /*
+    l=P.l;
+    b=P.b;                              //you can use any of the both
+    h=P.h;
+    */
+
+    *this=P;
+}
+
+void box::show()
+{
+    cout<<l<<" "<<b<<" "<<h<<endl;
+}
+
+int main()
+{
+    box b1(15,20,25);
+    box b2(b1);
+
+    b1.show();
+    b2.show();
+    return 0;
+}
